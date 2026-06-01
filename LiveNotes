@@ -1,0 +1,80 @@
+
+
+
+Variable
+==============
+Variable is name of storage location where we can store data
+
+Java support 3 type of variable
+----------------------------------
+1.Local variable
+------------------------
+If any variable created inside any function/block or constructor is called
+local variable
+
+Scope: Within a method
+Memory allocation: At the time of method execution
+Memory deallocation: After method execution
+
+2.Instance variable
+------------------------
+If any variable created inside class and outside any method/block is called
+instance variable
+
+Scope: Within a Object
+Memory allocation: At the time of Object creation
+Memory deallocation: After Object execution
+
+Note:
+For every new Object instance variable will get new memory 
+
+3.Static variable
+------------------------
+If any variable created inside class  with static keyword and outside any method/block is called
+static variable
+
+Scope: Within a Class
+Memory allocation: At the time of class Loading
+Memory deallocation: After class unload
+
+Note:
+Static variable creates one time memory and share that with all objects
+
+======================================================
+Type of Methods
+------------------
+1.Instance method
+2.Static Method
+
+1.Instance method
+============================
+-Any method design without static keyword is an Instance method
+-Instance method always we can call through Object
+-Instance method get new memory once new object created
+
+
+2.Static Method
+======================
+-Any method design with static keyword is called static method
+-Static method get called through ClassName so object is not required
+-Static method will get only one time memory and shared with all object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
