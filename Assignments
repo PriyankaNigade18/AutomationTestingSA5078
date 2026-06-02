@@ -3,3 +3,46 @@ Assignment1:
 ------------------
 Create Employee class and declare two variables empId and empName
 & store  & display 5 employee details
+
+Assignments on Datatype,Variable,TypeCasting
+----------------------------------------------
+1.Student Information System
+Problem Statement
+Create a program to store a student's name, roll number, percentage, and grade using appropriate data types.
+Display all the details.
+ 
+2.Employee Salary Details
+Problem Statement
+Create variables to store an employee's name, employee ID, monthly salary, and employment status.
+Display the details.
+
+3.Calculate Area of Rectangle
+Problem Statement
+Store the length and width of a rectangle in variables and calculate its area.
+
+4.Calculate Average Marks
+Problem Statement
+Store marks of three subjects and calculate the average marks obtained by the student.
+
+5.Demonstrate Implicit Type Casting
+Problem Statement
+Store an integer value and assign it to a double variable. 
+Print both values and observe the automatic conversion.
+
+6.Demonstrate Explicit Type Casting
+Problem Statement
+Store a decimal value in a double variable and convert it into an integer using explicit type casting.
+
+7.Convert Character to ASCII Value
+Problem Statement
+Store a character in a variable and display its ASCII value.
+
+8.Convert ASCII Value to Character
+Problem Statement
+Store an ASCII value in an integer variable and convert it into its corresponding character.
+
+9.Calculate Total Bill Amount
+Problem Statement
+A customer purchases 3 items. Store the price of each item and calculate the total bill amount.
+
+
