@@ -46,3 +46,52 @@ Problem Statement
 A customer purchases 3 items. Store the price of each item and calculate the total bill amount.
 
 
+
+Assignment on Package
+-------------------------
+List out 5 classes from java.lang , java.io, java.util
+
+Assignment on Unary Operator
+--------------------------------
+Q1. What will be the output?
+int a = 5;
+System.out.println(a++);
+System.out.println(a);
+
+Q2. What will be the output?
+int a = 5;
+System.out.println(++a);
+
+Q3. What will be the output?
+int a = 10;
+System.out.println(a--);
+System.out.println(a);
+
+Q4. What will be the output?
+int a = 5;
+int b = a++ + ++a;
+System.out.println(b);
+
+Q5. What will be the output?
+int a = 10;
+int b = --a + a--;
+System.out.println(a);
+System.out.println(b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
