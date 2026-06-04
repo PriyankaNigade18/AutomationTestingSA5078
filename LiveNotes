@@ -59,6 +59,74 @@ Type of Methods
 -Static method get called through ClassName so object is not required
 -Static method will get only one time memory and shared with all object
 
+In Automation testing to create reusable method/utility we use static method
+
+
+
+Methods In Details
+=======================
+/*
+		 *Compile time parameter passing
+		 *----------------------------------
+		 *At the time of compilation when we call method itself if when we any argument to the 
+		 *method then it called compile time parameter passing
+		 *
+		 *what is parameter
+		 *-----------------------
+		 *Parameter represent variables
+		 *
+		 *What is argument?
+		 *------------------------
+		 *Argument represent real data
+		 
+		 
+		 Compiletime parameter passing without return
+		 
+	return Keyword
+	====================
+	When any method wants to return some data/output that time we can use return keyword
+	- when return keyword used in method , then method return type should not be void
+	- return type will change as per data which we are returning from method
+	-return keyword return result to the calling function
+	-return statement is always last line of your method
+	
+
+	Exceptions In Java
+	=================
+	1.ArithmeticException:when we devide any number by 0
+	2.InputMismatchException: if we pass wrong input through scanner
+	
+	
+	
+	Constructor
+	================
+	- It is special method without any return type and name of this
+	method is same like its class name
+	- Constructor used to initialized object
+	- In java two types of constructor are available
+	
+		1.Default constructor
+		2.Parameterized constructor
+		
+		At the time of object creation we called constructor
+		In Java by default JVM is calling default constructor
+	-Constructor overloading is allowed but not overriding
+		
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
 
 
 

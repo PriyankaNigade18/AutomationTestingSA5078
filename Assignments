@@ -79,6 +79,33 @@ System.out.println(a);
 System.out.println(b);
 
 
+Method Concepts
+============================
+Calculator Program Using Methods
+
+Write a Java program to design a Calculator that performs basic arithmetic operations. 
+Create four separate methods: add(), subtract(), multiply(), and divide(). 
+Accept two numbers from the user at runtime, pass them as parameters to the respective methods, 
+return the calculated result from each method, and display the output on the console.
+
+Requirements:
+Create four methods:
+add(int a, int b)
+subtract(int a, int b)
+multiply(int a, int b)
+divide(int a, int b)
+1.Accept input values from the user at runtime.
+2.Pass the input values as arguments to the methods.
+3.Each method should return the calculated result.
+4.Print the returned result in the main method.
+
+
+
+
+
+
+
+
 
 
 
