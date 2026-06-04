@@ -23,17 +23,16 @@ public class OperatorsInJava {
 		 * 
 		 * Increment
 		 * -------------------
-		 * PreIncrement ++a: It will perform operation on that number immediatly
+		 * PreIncrement ++a:Increment first, then use the value
 		 * 
-		 * PostIncrement a++: It will first as it is give the value and then at the time
-		 * of reuse you will get variable increment value
+		 * PostIncrement a++: Use the value first, then increment
 		 * 
 		 * a++=   a=a+1
 		 * 
 		 * Decrement(--)
 		 * ---------------------
-		 * PreDecrement(--a)
-		 * PostDecrement(a--)
+		 * PreDecrement(--a) Decrement first, then use the value
+		 * PostDecrement(a--)Use the value first, then decrement
 		 * 
 		 * a--= a=a-1
 		 * 
