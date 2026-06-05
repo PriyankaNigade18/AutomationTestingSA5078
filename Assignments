@@ -100,6 +100,76 @@ divide(int a, int b)
 4.Print the returned result in the main method.
 
 
+Control  Flow statement
+===========================
+Simple If Statement
+1. Positive Number Check
+
+Write a Java program to accept a number from the user and print a message if the number is positive.
+
+2. Voting Eligibility
+
+Write a Java program to accept a person's age and display a message if the person is eligible to vote.
+
+3. Divisible by 5
+
+Write a Java program to check whether a given number is divisible by 5.
+
+4. Even Number Check
+
+Write a Java program to display a message if a given number is even.
+
+If-Else Statement
+------------------
+5. Even or Odd
+
+Write a Java program to determine whether a given number is even or odd.
+
+6. Positive or Negative
+
+Write a Java program to determine whether a number is positive or negative.
+
+7. Largest of Two Numbers
+
+Write a Java program to find the larger of two numbers entered by the user.
+
+8. Driving License Eligibility
+
+Write a Java program to check whether a person is eligible for a driving license (minimum age = 18).
+
+Else-If Ladder
+--------------------
+9. Grade Calculator
+
+Write a Java program to assign grades based on marks:
+
+90 and above → Grade A
+75–89 → Grade B
+60–74 → Grade C
+40–59 → Grade D
+Below 40 → Fail
+
+10. Number Type Check
+
+Write a Java program to determine whether a number is:
+
+Positive
+Negative
+Zero
+
+Switch Case
+------------------
+11. Day of the Week
+
+Write a Java program that accepts a number (1–7) and displays the corresponding day name.
+
+12. Month Name
+
+Write a Java program that accepts a month number (1–12) and displays the corresponding month name.
+
+13. Calculator
+
+Write a Java program that performs addition, subtraction, multiplication, or division based on the operator entered by the user.
 
 
 
