@@ -173,8 +173,76 @@ Write a Java program that performs addition, subtraction, multiplication, or div
 
 
 
+Assignments On Loop 
+-------------------------
+1.Print Even Numbers from 1 to 20
+
+Problem Statement:
+Write a Java program to display all even numbers between 1 and 20 using a for loop.
+
+2.Print Odd Numbers from 1 to 20
+
+Problem Statement:
+Write a Java program to display all odd numbers between 1 and 20 using a for loop.
+
+3.Reverse Counting
+
+Problem Statement:
+Write a Java program to print numbers from 10 to 1 using a for loop.
+
+4.Palindrome Number
+
+Problem Statement:
+Write a Java program to check whether a given number is a palindrome or not.
+
+5.Armstrong Number
+
+Problem Statement:
+Write a Java program to check whether a given 3-digit number is an Armstrong number.
+
+6.Number Pattern
+
+Problem Statement:
+Write a Java program to print the following pattern:
+
+1
+12
+123
+1234
+12345
+
+7.Prime Number Check
+
+Problem Statement:
+Write a Java program to check whether a given number is prime or not.
 
 
+Array Programs
+=========================
+1.Store and Display Elements
+
+Problem Statement:
+Write a Java program to store 5 integer values in an array and display all elements using a loop.
+
+2.Find Sum of Array Elements
+
+Problem Statement:
+Write a Java program to calculate and display the sum of all elements present in an array.
+
+3.Find Average of Array Elements
+
+Problem Statement:
+Write a Java program to calculate the average of all elements stored in an array.
+
+4.Find Largest Element
+
+Problem Statement:
+Write a Java program to find the largest element in an array.
+
+5.Count Even and Odd Numbers
+
+Problem Statement:
+Write a Java program to count how many even and odd numbers are present in an array.
 
 
 

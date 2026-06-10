@@ -1,0 +1,716 @@
+
+Assignment1:
+------------------
+Create Employee class and declare two variables empId and empName
+& store  & display 5 employee details
+
+class Employee {
+    int empId;
+    String empName;
+
+    Employee(int empId, String empName) {
+        this.empId = empId;
+        this.empName = empName;
+    }
+
+    void display() {
+        System.out.println("Employee ID: " + empId);
+        System.out.println("Employee Name: " + empName);
+        System.out.println("----------------------");
+    }
+}
+
+public class EmployeeDemo {
+    public static void main(String[] args) {
+
+        Employee e1 = new Employee(101, "John");
+        Employee e2 = new Employee(102, "David");
+        Employee e3 = new Employee(103, "Priya");
+        Employee e4 = new Employee(104, "Rohit");
+        Employee e5 = new Employee(105, "Neha");
+
+        e1.display();
+        e2.display();
+        e3.display();
+        e4.display();
+        e5.display();
+    }
+}
+
+Assignments on Datatype,Variable,TypeCasting
+----------------------------------------------
+1.Student Information System
+Problem Statement
+Create a program to store a student's name, roll number, percentage, and grade using appropriate data types.
+Display all the details.
+ 
+ public class StudentInfo {
+    public static void main(String[] args) {
+
+        String name = "Rahul";
+        int rollNo = 101;
+        double percentage = 87.5;
+        char grade = 'A';
+
+        System.out.println("Student Name: " + name);
+        System.out.println("Roll Number: " + rollNo);
+        System.out.println("Percentage: " + percentage);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+2.Employee Salary Details
+Problem Statement
+Create variables to store an employee's name, employee ID, monthly salary, and employment status.
+Display the details.
+
+public class EmployeeSalary {
+    public static void main(String[] args) {
+
+        String empName = "Amit";
+        int empId = 1001;
+        double monthlySalary = 55000.50;
+        boolean employmentStatus = true;
+
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Employee ID: " + empId);
+        System.out.println("Monthly Salary: " + monthlySalary);
+        System.out.println("Employment Status: " + employmentStatus);
+    }
+}
+
+3.Calculate Area of Rectangle
+Problem Statement
+Store the length and width of a rectangle in variables and calculate its area.
+
+public class RectangleArea {
+    public static void main(String[] args) {
+
+        double length = 10.5;
+        double width = 5.0;
+
+        double area = length * width;
+
+        System.out.println("Area of Rectangle: " + area);
+    }
+}
+
+4.Calculate Average Marks
+Problem Statement
+Store marks of three subjects and calculate the average marks obtained by the student.
+
+public class AverageMarks {
+    public static void main(String[] args) {
+
+        int subject1 = 80;
+        int subject2 = 75;
+        int subject3 = 90;
+
+        double average = (subject1 + subject2 + subject3) / 3.0;
+
+        System.out.println("Average Marks: " + average);
+    }
+}
+
+5.Demonstrate Implicit Type Casting
+Problem Statement
+Store an integer value and assign it to a double variable. 
+Print both values and observe the automatic conversion.
+
+public class ImplicitCasting {
+    public static void main(String[] args) {
+
+        int num = 100;
+
+        double value = num; // Implicit Casting
+
+        System.out.println("Integer Value: " + num);
+        System.out.println("Double Value: " + value);
+    }
+}
+
+6.Demonstrate Explicit Type Casting
+Problem Statement
+Store a decimal value in a double variable and convert it into an integer using explicit type casting.
+
+public class ExplicitCasting {
+    public static void main(String[] args) {
+
+        double amount = 123.75;
+
+        int convertedValue = (int) amount; // Explicit Casting
+
+        System.out.println("Double Value: " + amount);
+        System.out.println("Integer Value: " + convertedValue);
+    }
+}
+7.Convert Character to ASCII Value
+Problem Statement
+Store a character in a variable and display its ASCII value.
+
+public class CharToASCII {
+    public static void main(String[] args) {
+
+        char ch = 'A';
+
+        int asciiValue = ch;
+
+        System.out.println("Character: " + ch);
+        System.out.println("ASCII Value: " + asciiValue);
+    }
+}
+
+8.Convert ASCII Value to Character
+Problem Statement
+Store an ASCII value in an integer variable and convert it into its corresponding character.
+
+public class ASCIIToChar {
+    public static void main(String[] args) {
+
+        int asciiValue = 65;
+
+        char ch = (char) asciiValue;
+
+        System.out.println("ASCII Value: " + asciiValue);
+        System.out.println("Character: " + ch);
+    }
+}
+
+9.Calculate Total Bill Amount
+Problem Statement
+A customer purchases 3 items. Store the price of each item and calculate the total bill amount.
+
+public class TotalBill {
+    public static void main(String[] args) {
+
+        double item1 = 250.50;
+        double item2 = 150.75;
+        double item3 = 99.99;
+
+        double totalBill = item1 + item2 + item3;
+
+        System.out.println("Item 1 Price: " + item1);
+        System.out.println("Item 2 Price: " + item2);
+        System.out.println("Item 3 Price: " + item3);
+        System.out.println("Total Bill Amount: " + totalBill);
+    }
+}
+
+Assignment on Package
+-------------------------
+List out 5 classes from java.lang , java.io, java.util
+
+Assignment on Unary Operator
+--------------------------------
+Q1. What will be the output?
+int a = 5;
+System.out.println(a++);//5
+System.out.println(a);//6
+
+Q2. What will be the output?
+int a = 5;
+System.out.println(++a);//6
+
+Q3. What will be the output?
+int a = 10;
+System.out.println(a--);//10
+System.out.println(a);//9
+
+Q4. What will be the output?
+int a = 5;
+int b = a++ + ++a;
+System.out.println(b);//12
+
+Q5. What will be the output?
+int a = 10;
+int b = --a + a--;
+System.out.println(a);//8
+System.out.println(b);//18
+
+
+Method Concepts
+============================
+Calculator Program Using Methods
+
+Write a Java program to design a Calculator that performs basic arithmetic operations. 
+Create four separate methods: add(), subtract(), multiply(), and divide(). 
+Accept two numbers from the user at runtime, pass them as parameters to the respective methods, 
+return the calculated result from each method, and display the output on the console.
+
+Requirements:
+Create four methods:
+add(int a, int b)
+subtract(int a, int b)
+multiply(int a, int b)
+divide(int a, int b)
+1.Accept input values from the user at runtime.
+2.Pass the input values as arguments to the methods.
+3.Each method should return the calculated result.
+4.Print the returned result in the main method.
+
+public class Calculator {
+
+    // Addition Method
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Subtraction Method
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Multiplication Method
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Division Method
+    public static double divide(int a, int b) {
+
+        if (b == 0) {
+            System.out.println("Division by zero is not allowed.");
+            return 0;
+        }
+
+        return (double) a / b;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter First Number: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Enter Second Number: ");
+        int num2 = sc.nextInt();
+
+        int addition = add(num1, num2);
+        int subtraction = subtract(num1, num2);
+        int multiplication = multiply(num1, num2);
+        double division = divide(num1, num2);
+
+        System.out.println("\n===== Calculator Result =====");
+        System.out.println("Addition       : " + addition);
+        System.out.println("Subtraction    : " + subtraction);
+        System.out.println("Multiplication : " + multiplication);
+        System.out.println("Division       : " + division);
+
+            }
+}
+
+
+Control  Flow statement
+===========================
+Simple If Statement
+1. Positive Number Check
+
+Write a Java program to accept a number from the user and print a message if the number is positive.
+
+public class PositiveNumber {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        if (num > 0) {
+            System.out.println("Number is Positive");
+        }
+
+        sc.close();
+    }
+}
+
+2. Voting Eligibility
+
+Write a Java program to accept a person's age and display a message if the person is eligible to vote.
+
+
+public class VotingEligibility {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Age: ");
+        int age = sc.nextInt();
+
+        if (age >= 18) {
+            System.out.println("Eligible to Vote");
+        }
+
+        sc.close();
+    }
+}
+
+3. Divisible by 5
+
+Write a Java program to check whether a given number is divisible by 5.
+
+public class DivisibleByFive {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        if (num % 5 == 0) {
+            System.out.println("Number is divisible by 5");
+        }
+
+        sc.close();
+    }
+}
+
+4. Even Number Check
+
+Write a Java program to display a message if a given number is even.
+
+public class EvenCheck {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("Number is Even");
+        }
+
+        sc.close();
+    }
+}
+
+If-Else Statement
+------------------
+5. Even or Odd
+
+Write a Java program to determine whether a given number is even or odd.
+
+public class EvenOdd {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("Even Number");
+        } else {
+            System.out.println("Odd Number");
+        }
+
+        sc.close();
+    }
+}
+
+6. Positive or Negative
+
+Write a Java program to determine whether a number is positive or negative.
+
+public class PositiveNegative {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        if (num >= 0) {
+            System.out.println("Positive Number");
+        } else {
+            System.out.println("Negative Number");
+        }
+
+        sc.close();
+    }
+}
+
+7. Largest of Two Numbers
+
+Write a Java program to find the larger of two numbers entered by the user.
+
+public class LargestOfTwo {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter First Number: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Enter Second Number: ");
+        int num2 = sc.nextInt();
+
+        if (num1 > num2) {
+            System.out.println("Largest Number: " + num1);
+        } else {
+            System.out.println("Largest Number: " + num2);
+        }
+
+        sc.close();
+    }
+}
+8. Driving License Eligibility
+
+Write a Java program to check whether a person is eligible for a driving license (minimum age = 18).
+
+public class DrivingLicense {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Age: ");
+        int age = sc.nextInt();
+
+        if (age >= 18) {
+            System.out.println("Eligible for Driving License");
+        } else {
+            System.out.println("Not Eligible for Driving License");
+        }
+
+        sc.close();
+    }
+}
+
+Else-If Ladder
+--------------------
+9. Grade Calculator
+
+Write a Java program to assign grades based on marks:
+
+90 and above → Grade A
+75–89 → Grade B
+60–74 → Grade C
+40–59 → Grade D
+Below 40 → Fail
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Marks: ");
+        int marks = sc.nextInt();
+
+        if (marks >= 90) {
+            System.out.println("Grade A");
+        }
+        else if (marks >= 75) {
+            System.out.println("Grade B");
+        }
+        else if (marks >= 60) {
+            System.out.println("Grade C");
+        }
+        else if (marks >= 40) {
+            System.out.println("Grade D");
+        }
+        else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
+
+10. Number Type Check
+
+Write a Java program to determine whether a number is:
+
+Positive
+Negative
+Zero
+
+public class NumberType {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        if (num > 0) {
+            System.out.println("Positive Number");
+        }
+        else if (num < 0) {
+            System.out.println("Negative Number");
+        }
+        else {
+            System.out.println("Zero");
+        }
+
+        sc.close();
+    }
+}
+
+Switch Case
+------------------
+11. Day of the Week
+
+Write a Java program that accepts a number (1–7) and displays the corresponding day name.
+
+public class DayOfWeek {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Day Number (1-7): ");
+        int day = sc.nextInt();
+
+        switch(day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid Day Number");
+        }
+
+        sc.close();
+    }
+}
+
+12. Month Name
+
+Write a Java program that accepts a month number (1–12) and displays the corresponding month name.
+
+public class MonthName {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Month Number (1-12): ");
+        int month = sc.nextInt();
+
+        switch(month) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("February");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Invalid Month Number");
+        }
+
+        sc.close();
+    }
+}
+
+13. Calculator
+
+Write a Java program that performs addition, subtraction, multiplication, or division based on the operator entered by the user.
+
+public class CalculatorSwitch {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter First Number: ");
+        double num1 = sc.nextDouble();
+
+        System.out.print("Enter Second Number: ");
+        double num2 = sc.nextDouble();
+
+        System.out.print("Enter Operator (+, -, *, /): ");
+        char op = sc.next().charAt(0);
+
+        switch(op) {
+
+            case '+':
+                System.out.println("Result = " + (num1 + num2));
+                break;
+
+            case '-':
+                System.out.println("Result = " + (num1 - num2));
+                break;
+
+            case '*':
+                System.out.println("Result = " + (num1 * num2));
+                break;
+
+            case '/':
+                if(num2 != 0)
+                    System.out.println("Result = " + (num1 / num2));
+                else
+                    System.out.println("Division by zero is not allowed");
+                break;
+
+            default:
+                System.out.println("Invalid Operator");
+        }
+
+        sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

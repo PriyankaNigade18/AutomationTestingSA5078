@@ -4,7 +4,7 @@ package com.CoreJava.Array_String;
 /*
  * Array is static data structure in Java
  * Array can store similar type of data and Object
- *  * Array have fixed size and type of data
+ * Array have fixed size and type of data
  * Array store data as per index
  * 
  * Types
@@ -129,13 +129,20 @@ public class Array1DDemo {
 		}
 		
 		
+		System.out.println("---------Real data-----------------");
+		
+		Object empData[]= {"Sarang","Pune",25,'M',78.88,6879809989L};
+		
+		System.out.println("Total entries: "+empData.length);//
+		System.out.println(empData[2]);//
 		
 		
+		System.out.println("-----For Each loop-----");
 		
-		
-		
-		
-		
+		for(Object i:empData)
+		{
+			System.out.println(i);
+		}
 		
 		
 		
