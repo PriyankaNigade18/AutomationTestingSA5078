@@ -112,10 +112,63 @@ Methods In Details
 		In Java by default JVM is calling default constructor
 	-Constructor overloading is allowed but not overriding
 		
-	
+=================================================
+Super Keyword
+============================
+1.Super keyword can be used to refer immediate parent class instance variable.
+2.Super keyword can be used to invoke immediate parent class method.
+3.Super keyword can be used to call immediate parent class constructor.(super())
 
-	
-	
+final Keyword
+======================================
+final keyword can be apply for variable,method and class
+1.If we apply final keyword to variable then that variable will be consider constant variable
+(value will become fix...no one can update)
+2.If we apply final keyword to method then we cant override that method in other class or child class
+3.If we apply final keyword to class then we can not extend that class into another class.
+===============================================================
+IQ: How we can implement immutable class ,variable or method in java?
+Ans: Using final keyword.
+==============================================================
+
+	Data abstraction
+  --------------------
+  Hiding internal details of software and providing relevant features to user is called
+ data abstraction
+  
+  Purpose: Hiding information/internal details
+  
+  Real time example:
+  ATM
+  Google Map
+  
+  How to implement in Java
+  ============================
+  1.Using Abstract class
+ -----------------------
+	Class declare with abstract keyword is abstract class
+	 Abstract class can have implemented method and abstract method
+	 Abstract method is method without body
+	 for Partial abstraction we use abstract class
+	 And Abstract class Object we can't create 
+	 To call methods we need child class
+	 Child class can implement all abstract methods from parent
+ 
+  
+  2.Interface
+ ----------------
+	 Interface is special class which can have all methods by default
+	 public and abstract methods and variable are static and final.
+	 
+	 100% abstraction is possible
+	 
+	 We can not create object of interface
+	 
+	 To access methods of interface we need child class 
+	 & child class has to implement all the abstract methods of interface.
+	 
+	 Using interface multiple and hybrid inheritance we can achieve
+  
 	
 	
 	
