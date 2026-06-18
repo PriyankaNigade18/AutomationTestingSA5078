@@ -1,0 +1,128 @@
+
+Selenium WebDriver
+========================
+Selenium WebDriver it is an API for WebUi automation Test
+Selenium WebDriver is an interface through which we will automate any webapplication
+
+Selenium Project Setup
+==========================
+1.Java Project
+2.Maven Project
+
+1.Java Project
+----------------------
+1.create new java project
+2.download selenium server Jar from official website https://www.selenium.dev/downloads/
+3. right click on project-->Build Path-->ConfigureBuild path--->Libraries
+-->click on ClassPath-->Click Add external Jars--->attached downloaded file
+
+2.Maven Project
+-------------------------
+What is Maven?
+--------------------
+Maven is Apache foundation project
+Maven is build and project management tool
+Maven Followed by developers and Testers
+
+What is POM.xml file
+----------------------------
+POM stands for Project Object Model.
+IT is configuration file for entire maven project
+In this file we can add required Plugins and required dependencies
+
+Structure of POM.xml
+------------------------
+<Project>
+
+<dependencies>
+
+<dependency>Selenium</dependency>
+<dependency>TestNG</dependency>
+
+</dependencies>
+
+
+</project>
+---------------------------------------------
+Maven Support two Repositories
+----------------------------------------
+1.Local Repo
+C:\Users\piyun\.m2\repository
+
+2.Remote Repo
+https://mvnrepository.com/
+
+------------------------------------------------------
+
+WebDriver Browser Commands/Methods
+==========================================
+1.get(url): Open application within browser
+2.getTitle(): get the current page title of the application
+3.getCurrentUrl(): get the current page url of the application
+4.getPageSource(): get the page source of application/page
+5.close(): close the current active browser 
+6.quit(): close all the browser open through selenium
+
+Window Handling
+------------------
+7.getWindowHandle()
+8.getWindowHandles()
+=======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+here dependency is library file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
