@@ -24,7 +24,7 @@ public class Tc002_BrowserCommands {
 		String actTitle=driver.getTitle();
 		
 		//validate title should be Google
-		if(actTitle.equals("GoogleApp"))
+		if(actTitle.equals("Google"))
 		{
 			System.out.println("Title Match....Test Pass");
 		}else

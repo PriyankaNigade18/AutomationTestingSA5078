@@ -1,0 +1,42 @@
+
+Assignment 1: Browser Commands
+Objective
+
+Practice browser commands in Selenium.
+
+Tasks
+Launch Chrome Browser.
+Open https://www.selenium.dev/
+Print the page title.
+Print the current URL.
+Maximize the browser window==>(driver.manage().window().maximize())
+Verify whether the page title contains "Selenium".
+Refresh the page.
+Close the browser.
+-----------------------------------------------------------------
+Assignment 2: Navigation Commands
+Objective
+
+Practice Selenium Navigation methods.
+
+Tasks
+Open https://www.demoblaze.com
+Navigate to https://demoqa.com
+Navigate to https://automationexercise.com
+Click browser Back button using Selenium.
+Verify the URL belongs to DemoQA.
+Click browser Forward button.
+Verify the URL belongs to Automation Exercise.
+Refresh the page.
+Print the title after refresh.
+
+---------------------------------------------------------------------------
+Assignment 3: Login Functionality Testing – The Internet Herokuapp
+
+Application URL:https://the-internet.herokuapp.com/login
+
+Test Data
+Valid Credentials
+Username: tomsmith
+Password: SuperSecretPassword!
+----------------------------------------------------------------------

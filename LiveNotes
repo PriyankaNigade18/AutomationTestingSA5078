@@ -54,6 +54,13 @@ https://mvnrepository.com/
 
 ------------------------------------------------------
 
+Selenium Exceptions
+===========================
+1.InvalidArgumentException: invalid argument
+For Invalid url you will get this exception(URL must have protocol https/http)
+
+
+
 WebDriver Browser Commands/Methods
 ==========================================
 1.get(url): Open application within browser
@@ -68,6 +75,161 @@ Window Handling
 7.getWindowHandle()
 8.getWindowHandles()
 =======================================================
+
+Navigation Command In Selenium
+====================================
+Selenium has Navigation interface which provide navigation methods
+
+1.to(url):Navigate to application
+---------------------------------
+driver.navigate().to(Url)
+
+2.back()
+---------------------
+driver.navigate().back()
+
+
+3.forward()
+-------------------
+driver.navigate().forward()
+
+4.refresh()
+----------------------
+driver.navigate().refresh()
+
+===================================
+How to interact with webelement
+---------------------------------------
+
+What is WebElement?
+----------------------------
+Every GUI element is Webelement(textbox,checkbox,link,button...etc)
+
+Technically In Selenium We have WebElement is Interface
+
+1.In Selenium Identify element
+2.Perform action on those element
+
+Selenium Identify Element using Locator
+
+what is Locator?
+------------------------
+Locator is address of webelement from webpage
+
+Selenium Support total 8 Locators
+-----------------------------------------
+1.By id
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.By tagName
+
+Dynamic WebElement automation
+7.By cssSelector
+8.By xpath
+
+------------------------------------------------
+Selenium version 4 they added Relative locators
+-------------------------------------------------
+leftOf()
+rightOf()
+above()
+below()
+
+=================================================
+Selenium Element Actions
+----------------------------
+textbox,searchbox--->type/enter data--->sendKeys("data");
+to clear the text: clear()
+button,link,radio,checkbox---> do click----->click()
+========================================================
+To identify element we use in Selenium two methods
+----------------------------------------------
+1.findElement()
+----------------------------
+- findElement() it identify single element
+- findElement() returns WebElement interface object
+- If element not found then this method throws exception NoSuchElementException
+
+2.findElements()
+----------------------------------------
+
+
+
+
+
+=====================================================
+How to automate any HyperLink
+----------------------------------
+
+<a id="SignIn" href="login.html">Sign In</a>
+                               <a>Link Text</a>
+
+In selenium to automate any link we have two methods
+1.linkText(): Full link text
+----------------------------------
+driver.findElement(By.linkText("Sign In")).click();
+
+2.partialLinkText(): partial link Text
+---------------------------------------------
+driver.findElement(By.partialLinkText("In")).click();
+
+========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
