@@ -58,7 +58,8 @@ Selenium Exceptions
 ===========================
 1.InvalidArgumentException: invalid argument
 For Invalid url you will get this exception(URL must have protocol https/http)
-
+2.InvalidSelectorException: Compound class names not permitted
+When you use multiple classname for identification of element
 
 
 WebDriver Browser Commands/Methods
@@ -154,11 +155,10 @@ To identify element we use in Selenium two methods
 
 2.findElements()
 ----------------------------------------
-
-
-
-
-
+- findElements() is identify multiple elements
+- findElements() returns List<WebElement>
+- If elements not found then this method never throws exception
+You will get [] list and size will be 0
 =====================================================
 How to automate any HyperLink
 ----------------------------------
@@ -176,6 +176,155 @@ driver.findElement(By.linkText("Sign In")).click();
 driver.findElement(By.partialLinkText("In")).click();
 
 ========================================================
+By className
+====================
+<button id="submit-id" class="btn btn-default btn-primary">Submit</button>
+
+
+class="btn btn-default btn-primary"
+	   c1      c2         c3	
+
+InvalidSelectorException: Compound class names not permitted
+
+Rule
+======
+1.You can not add all class name in selenium
+2.You should uniqully identify class name for Element and then use it
+=========================================================================
+
+Synchronization Issue
+---------------------------
+- When there is time mapping issue between tool and application then Selenium
+give us Synchronization issue
+
+
+Static wait we can add using JAVA
+-------------------
+Thread.sleep(2000);
+
+Selenium Support Dynamic Waits
+----------------------------
+1.Implicit Wait
+-----------------------------
+- Implicit wait is Global wait applicable for all the elements in Script
+- Implicit wait default timeout  is 0sec
+- Implicit wait suppose I used as 10sec and element needed on 6sec so remaining 4sec selenium 
+will not wait ,it will continue with next element
+- Add Implicit wait after driver session
+
+Syntax
+-----------
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+2.Explicit Wait
+--------------------------
+-Explicit wiat is applicable for single webelement
+- we can apply wait on element based on conditions
+-Explicit wait implemented in Selenium using two classes
+1.WebDriverWait class
+2.FluentWait Class
+
+WebDriverWait(C) extends FluentWait(C) implements Wait(I)
+
+=====================================================================
+By tagName
+==================
+Number of buttons
+Number of imput boxes
+Number of images
+Number of Links 
+Selnium given you tagName
+
+tagname always give multiple element match so we can use here 
+to identify all those element findElements()
+
+===========================================================
+
+WebElement Interface methods
+=====================================
+To perform action on elements
+----------------------------
+1.sendKeys("data",Keys.KeyboardKey)
+Keys is class used to press keyboard key while perform action
+
+2.click():click on button/link,checkbox,radio
+
+3.clear(): to clear entered text
+
+
+To validate WebElements
+------------------------------
+1.isDisplayed():boolean
+
+2.isEnabled():boolean
+
+3.isSelected():boolean
+
+To get the visible text of any weblement/any inner html element
+'------------------------------------------------------------------
+getText():String
+
+To get any attribute value
+--------------------------------
+getDomAttribute("attributename"): String value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

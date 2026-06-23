@@ -33,8 +33,15 @@ public class Tc002_BrowserCommands {
 		}
 		
 		
-		
-		
+		//get the url and validate it
+		String actUrl=driver.getCurrentUrl();
+		if(actUrl.contains("google.com"))
+		{
+			System.out.println("Url matched...");
+		}else
+		{
+			System.out.println("Url not matched!");
+		}
 		
 		
 		

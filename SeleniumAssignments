@@ -1,4 +1,8 @@
 
+
+No need to upload on LMS
+----------------------------------
+
 Assignment 1: Browser Commands
 Objective
 
@@ -40,3 +44,17 @@ Valid Credentials
 Username: tomsmith
 Password: SuperSecretPassword!
 ----------------------------------------------------------------------
+Assignment 4: Assignment Statement:
+
+Navigate to https://www.naukri.com/, identify all the links available on the webpage, 
+count the total number of links, and print the link text along with the 
+corresponding href attribute value for each link in the console.
+
+
+
+
+
+
+
+
+
