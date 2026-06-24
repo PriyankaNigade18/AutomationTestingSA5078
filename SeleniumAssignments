@@ -44,12 +44,22 @@ Valid Credentials
 Username: tomsmith
 Password: SuperSecretPassword!
 ----------------------------------------------------------------------
-Assignment 4: Assignment Statement:
+Assignment 4: Assignment Statement
 
 Navigate to https://www.naukri.com/, identify all the links available on the webpage, 
 count the total number of links, and print the link text along with the 
 corresponding href attribute value for each link in the console.
 
+--------------------------------------------------------------------------
+Assignment 5:
+Navigate to https://tutorialsninja.com/demo/index.php?route=account/login app
+and automate login using only cssSelector
+---------------------------------------------------------------------------
+Assignment 6:
+Navigate to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+app and automate login and logout with only cssSelector
+
+---------------------------------------------------------------------------
 
 
 

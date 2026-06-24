@@ -189,7 +189,7 @@ InvalidSelectorException: Compound class names not permitted
 Rule
 ======
 1.You can not add all class name in selenium
-2.You should uniqully identify class name for Element and then use it
+2.You should uniquely identify class name for Element and then use it
 =========================================================================
 
 Synchronization Issue
@@ -267,6 +267,188 @@ getText():String
 To get any attribute value
 --------------------------------
 getDomAttribute("attributename"): String value
+
+============================================================
+Dynamic Locators
+=========================
+1.By cssSelector
+2.By xpath
+
+
+By cssSelector
+=============================
+- CssSelector is Locator which identify element based on Css properties(css id,attribute,classname)
+- CssSelector is cleaner & faster than xpath
+- CssSelector is faster as it can travel from Parent tag to child tag
+- CssSelector does not support text based element identification
+- Csselector does not have any method but we can identify element uniquely based on 
+special symbols
+
+CssSelector Basics
+-------------------------
+1.tagname with id
+--------------------
+Syntax:
+==========
+tagname#id
+
+Example:
+<a id="SignIn" name="sign-in-link" class="nav-link" href="login.html">Sign In</a>
+
+a#SignIn
+OR
+#SignIn
+---------------------------------------------------
+2.tagname with attribute
+--------------------------------
+Syntax:
+==============
+tagname[attribute='value']
+
+Example:
+<input  type="email" class="form-control" placeholder="Enter email" required="">
+
+input[type='email'].....1 of 1
+
+--------------------------------------------------------
+3.tagname with className
+------------------------------
+cssSelector class name support multiple class names
+
+Syntax:
+=============
+tagname.className
+
+Example:
+<button class="btn btn-default btn-primary">Submit</button>
+
+button.btn.btn-default.btn-primary     1 of 1
+
+-------------------------------------------------------
+4.tagname with id,attribute and className
+------------------------------------------------
+Syntax:
+=============
+tagname#id.className[attribute='value']
+
+Example:
+<button id="submit-id" name="submit-name" class="btn btn-default btn-primary">Submit</button>
+
+button#submit-id.btn[name='submit-name']
+
+======================================================
+-------------------------------------------------
+CssSelectors symbols with attributes
+--------------------------------------
+1.* means  contains()
+-------------------------
+Syntax
+==========
+tagname[attribute*='partialvalue']
+
+Example:
+<input id="twotabsearchtextbox">
+
+input[id*='searchtext']
+
+------------------------------------
+
+2.^ means startsWith("Prefix")
+----------------------------
+Syntax:
+================
+tagname[attribute^='prefix value']
+
+Example:
+<input id="twotabsearchtextbox">
+
+input[id^='twotab']   1 of 1
+-------------------------------------------------
+3.$ means endsWith('suffix')
+--------------------------
+Syntax:
+=============
+tagname[attribute$='suffix value']
+
+Example:
+<input id="twotabsearchtextbox">
+
+input[id$='box']
+
+===============================================
+Parent to child travel
+---------------------
+1. whitespace: indirect +direct child of the parent
+-------------------
+Syntax:
+=========
+parentTag childtag ==>direct+indirect bothchilds
+aside a    1 of 13
+aside div  1 of 1
+
+2. > : direct childs of parent
+--------------------------
+Syntax:
+=============
+parenttagname>childtagname ===>direct child
+aside>div  1 of 1
+div.list-group>a    1 of 13
+
+==================================================
+
+CssSelector with indexing
+----------------------------------
+Syntax:
+==================
+parenttag>childtag:nth-child(Domnumber)
+
+============================================================
+By xpath
+=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
