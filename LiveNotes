@@ -525,8 +525,130 @@ Or
 
 //tagname[starts-with(normalize-space(),'prefix text')]
 
-
+===============================================================
 Xpath Axies
+===============
+1.ancestor
+----------------------
+Syntax:
+-------------
+//tagname[@attribute='value']//ancestor::tagname of ancestor
+
+
+2.Parent
+-----------------
+Syntax:
+-------------
+//tagname[@attribute='value']//parent::tagname of parent
+
+3.Child
+----------------
+Syntax:
+-------------
+//tagname[@attribute='value']//child::tagname of child
+
+4.following
+Syntax:
+-------------
+//tagname[@attribute='value']//following::tagname of following
+
+5.following-sibling
+Syntax:
+-------------
+//tagname[@attribute='value']//following-sibling::tagname of followingsibling
+
+6.preceding
+-------------------------
+Syntax:
+-------------
+//tagname[@attribute='value']//preceding::tagname of preceding
+
+7.preceding-sibling
+---------------------------
+Syntax:
+-------------
+//tagname[@attribute='value']//preceding-sibling::tagname of precedingsibling
+--------------------------------------------------
+DOM Example
+-------------------
+
+<tbody>--------------------------ancestor
+<tr>------------------------Parent
+ 
+         <td>4</td>preceding sibling
+
+          <td>John</td>-----------------Element
+
+          <td>Robinson</td>-------Following sibling
+
+          <td>jr5527</td>Following sibling
+ 
+         <td>Following sibling
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>
+
+        </tr>
+
+</tbody>
+
+------------------------------------------------
+Selenium Version 4 Relative Locators
+-----------------------------------------
+above()
+below()
+toLeftOf()
+toRightOf()
+near()
+
+============================================
+TestNG Installation
+----------------------------
+
+
+Dropdown
+
+Calendar
+
+JavascriptExecutor interface
+
+WebTabel
+
+
+Window handling/tab
+
+
+Alert automation
+
+FrameAutomation
+
+
+Framework
+----------------------
+TestNG
+
+
+Cucumber: 2 sessions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
