@@ -604,23 +604,48 @@ near()
 ============================================
 TestNG Installation
 ----------------------------
-
-
 Dropdown
+=================
+1. Select tag <select> Based dropdown
+-------------------------------------------
+In Selenium to automate Select tag based dropdown we use Select Class
 
+Select sc=new Select(dropdown element address);
+
+1.To verify dropdown support single selection or multiple selection
+isMultiple()
+
+To select Single option from dropdown
+---------------------------------------
+1.selectByVisibleText('text')
+2.selectByIndex(int)
+3.selectByValue('value')
+
+To get all Options from the dropdown
+---------------------------------------
+getOptions(): List<WebElement>
+
+==================================================
+2. bootstrap/autosuggestion/javascript dropdown
+
+do automate it as manual steps & locator
+
+======================================================
 Calendar
 
 JavascriptExecutor interface
 
 WebTabel
 
-
 Window handling/tab
-
 
 Alert automation
 
 FrameAutomation
+
+Actions Class
+
+File upload
 
 
 Framework

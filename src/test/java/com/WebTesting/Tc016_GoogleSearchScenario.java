@@ -31,6 +31,7 @@ public class Tc016_GoogleSearchScenario {
 		for(WebElement i:allOptions)
 		{
 			System.out.println(i.getText());
+			
 		}
 		
 		
