@@ -631,22 +631,35 @@ getOptions(): List<WebElement>
 do automate it as manual steps & locator
 
 ======================================================
-Calendar
-
+Calendar/date picker
+================================
+No predefined method : write manual logic
+============================================
 JavascriptExecutor interface
-
-WebTabel
-
+-------------------------------
+Selenium can not execute any javascript command so we have JavaScriptExecutor interface
+Senarios:
+===========
+1.scroll the page
+2.to get the title of application
+3.to refresh page
+4.to click on element
+5.to enter text 
+6.to automate hidden elements 
+=====================================================
 Window handling/tab
 
 Alert automation
 
 FrameAutomation
 
+WebTabel
+
 Actions Class
 
 File upload
 
+Capabilities
 
 Framework
 ----------------------

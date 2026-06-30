@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.Tc023_SelectBasedDropdown_Rediffmail">
+      <class name="com.WebTesting.Tc029_JavascriptExecutorUsage">
         <methods>
-          <include name="f"/>
+          <include name="testJavascriptUsage"/>
         </methods>
-      </class> <!-- com.WebTesting.Tc023_SelectBasedDropdown_Rediffmail -->
+      </class> <!-- com.WebTesting.Tc029_JavascriptExecutorUsage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,22 +24,29 @@ public class Tc021_SelectBasedDropdown_Amazon {
 	  
 	  driver.get("https://www.amazon.in/");
 	  
-	  
-	  //identify dropdown element
+	//identify dropdown element
 	  WebElement dropdownEle=driver.findElement(By.cssSelector("div#nav-search-dropdown-card select"));
+	  System.out.println("Is element displayed?: "+dropdownEle.isDisplayed());//false
+	  Select sc=new Select(dropdownEle);
+	  System.out.println("Is dropdown support single selection or multiple selection?: "+sc.isMultiple());
+	  
+	  //single option selection
+	  sc.selectByVisibleText("Books");
+	  
+	  
+	  
+	  
+	  /*
+	  
 	  
 	  ElementUtil.selectBasedDropdown(dropdownEle,"Kindle Store");
 	  
 	  
 	  
-	  /*
+	  
 	  //As dropdown is <select> based so create object of Select class
 	  
-	  Select sc=new Select(dropdownEle);
-	  System.out.println("Is dropdown support single selection or multiple selection?: "+sc.isMultiple());
 	  
-	  //single option selection
-	  //sc.selectByVisibleText("Books");
 	  sc.selectByIndex(3);
 	  Thread.sleep(2000);
 	  sc.selectByValue("search-alias=stripbooks");
