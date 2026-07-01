@@ -73,8 +73,8 @@ WebDriver Browser Commands/Methods
 
 Window Handling
 ------------------
-7.getWindowHandle()
-8.getWindowHandles()
+7.getWindowHandle():returns the window handle (ID) of the current browser window.
+8.getWindowHandles():returns the window handles of all open browser windows/tabs.
 =======================================================
 
 Navigation Command In Selenium
@@ -648,8 +648,67 @@ Senarios:
 6.to automate hidden elements 
 =====================================================
 Window handling/tab
+=======================
+1.getWindowHandle(): 
+-this method gives the current window Handle<Session Id>
+- getWindowHandle() returns String type of id
 
+2.getWindowHandles():
+- this method returns all open windows Id/handle
+- return type of this method is Set<String>
+
+3.switchTo()
+To switch in between parent window/child window
+--------------------------
+driver.switchTo(): targent Element
+
+SwitchTo() useful for Windows,alerts,frames
+
+
+In Selenium version4 Just to open new tab or new window we have one more command
+----------------------------------------------
+newWindow(): return type of this method is WebDriver interface object
+
+//new tab
+driver.switchTo().newWindow(WindowType.TAB);
+
+//newWindow
+driver.switchTo().newWindow(WindowType.WINDOW);
+
+
+================================================================
 Alert automation
+----------------------
+Alert is any popup its open by application or browser
+when alerts appears it will intrrupt current execution so we need to handle alerts
+Selenium handle alerts using Alert interface
+1. driver has to switch to alert box
+
+Types:
+========
+1.Simple Alert: ok button
+2.Confirmation alert: OK +Cancel
+3.Prompt alert
+
+Methods
+----------------
+1.To get the text of the alert: getText()
+2.To simulate Ok button action: accept()
+3.To simulate cancel button action: dismiss()
+4.To enter data to prompt alert: sendKeys()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 FrameAutomation
 

@@ -56,8 +56,28 @@ public class ElementUtil
 	}
 	
 	
+	//multiple windowHandling
 	
+	public static void switchToExpectedWindow(WebDriver driver,List<String> allWindows,String windowTitle)
+	{
+		for(String childId:allWindows)
+		  {
+			  //we are switching to every window and collecting title
+			  String appTitle=driver.switchTo().window(childId).getTitle();
+			  if(appTitle.contains(windowTitle))
+			  {
+				  System.out.println("Expected Window found");
+				  System.out.println("Current url: "+driver.getCurrentUrl());
+				  break;
+			  }
+		  }
+		
+	}
 	
+	public static void switchToParentWindow(WebDriver driver,String parentId)
+	{
+		driver.switchTo().window(parentId);
+	}
 	
 	
 	

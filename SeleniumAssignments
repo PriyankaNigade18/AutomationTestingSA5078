@@ -127,3 +127,19 @@ Write automation script for https://the-internet.herokuapp.com/dropdown
 Assignment 14:
 Write automation script for datepicker from this 
 https://demoqa.com/date-picker application
+----------------------------------------------------------------------
+Assignment 15:
+Write automation script for Alert ,navigate to this app
+https://formy-project.herokuapp.com/switch-window  and handle alert print alert 
+message in console
+----------------------------------------------------------
+Assignment 16:
+Write automation script where navigate to google app and in next 10 tab open
+facebook app.
+--------------------------------------------------------------------------
+Assignment 17:
+Write automation script to automate all buttons like(New Tab,New Window,New Window Message)
+from this app https://demoqa.com/browser-windows
+
+
+
