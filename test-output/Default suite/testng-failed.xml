@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.Tc033_AlertAutomation_RediffMail">
+      <class name="com.WebTesting.Tc037_NestedFrameAutomation">
         <methods>
-          <include name="testAlert"/>
+          <include name="testNestedFrame"/>
         </methods>
-      </class> <!-- com.WebTesting.Tc033_AlertAutomation_RediffMail -->
+      </class> <!-- com.WebTesting.Tc037_NestedFrameAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

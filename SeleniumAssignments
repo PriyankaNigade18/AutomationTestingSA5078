@@ -140,6 +140,18 @@ facebook app.
 Assignment 17:
 Write automation script to automate all buttons like(New Tab,New Window,New Window Message)
 from this app https://demoqa.com/browser-windows
-
-
-
+------------------------------------------------------------
+Assignment 18:
+Handling Nested Frames
+Application URL:
+https://demoqa.com/nestedframes
+Objective:
+Practice handling nested frames using Selenium WebDriver by switching between the parent frame, child frame, and the main web page. 
+The page contains one parent frame with a nested child frame.
+----------------------------------------------------------
+Assignment 19:
+Complete automation of all frames of this application https://ui.vision/demo/webtest/frames/
+--------------------------------------------------------
+Assignment 20:
+Automate https://the-internet.herokuapp.com/context_menu application 
+-------------------------------------------------------------

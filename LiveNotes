@@ -698,6 +698,75 @@ Methods
 4.To enter data to prompt alert: sendKeys()
 
 
+How to automate /handle any authentication popup?
+--------------------------------------------------------
+
+https://username:password@www.google.com
+
+============================================
+Frame Element
+=====================
+Frame <frame> or <iframe> is inline frame it is html element which embed another html document
+within current html document
+
+one html document embeded into another html document is call frame
+
+frame() with multiple arguments
+------------------------------
+driver.switchTo().frame(index)
+
+driver.switchTo().frame(id/name)
+
+driver.switchTo().frame(frame webElement)
+
+defaultContent()
+--------------------
+Selects either the first frame on the page, or the main document when a page containsiframes. 
+
+parentFrame()
+---------------------
+Change focus to the parent context. If the current context is the top level browsing context,the context remains unchanged. 
+====================================================================
+Mouse Operation Automate
+----------------------------
+Selenium Provide Actions class 
+1.right click
+2.double click
+3.mouse hover
+4.drag and drop
+5.slider
+6.resize
+
+Note:
+When you are performing single action then use perform()
+ and when you are performing multiple actions then use build().perform()
+ 
+ ==========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-01T22:12:18 IST" name="Default suite" finished-at="2026-07-01T22:12:32 IST" duration-ms="13356">
+  <suite started-at="2026-07-02T22:15:11 IST" name="Default suite" finished-at="2026-07-02T22:15:15 IST" duration-ms="4305">
     <groups>
     </groups>
-    <test started-at="2026-07-01T22:12:18 IST" name="Default test" finished-at="2026-07-01T22:12:32 IST" duration-ms="13356">
-      <class name="com.WebTesting.Tc033_AlertAutomation_RediffMail">
-        <test-method signature="testAlert()[pri:0, instance:com.WebTesting.Tc033_AlertAutomation_RediffMail@31304f14]" started-at="2026-07-01T22:12:18 IST" name="testAlert" finished-at="2026-07-01T22:12:32 IST" duration-ms="13292" status="PASS">
+    <test started-at="2026-07-02T22:15:11 IST" name="Default test" finished-at="2026-07-02T22:15:15 IST" duration-ms="4305">
+      <class name="com.WebTesting.Tc038_RightClickAction">
+        <test-method signature="testMouseOperationsRightClick()[pri:0, instance:com.WebTesting.Tc038_RightClickAction@6302bbb1]" started-at="2026-07-02T22:15:11 IST" name="testMouseOperationsRightClick" finished-at="2026-07-02T22:15:15 IST" duration-ms="4242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAlert -->
-      </class> <!-- com.WebTesting.Tc033_AlertAutomation_RediffMail -->
+        </test-method> <!-- testMouseOperationsRightClick -->
+      </class> <!-- com.WebTesting.Tc038_RightClickAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

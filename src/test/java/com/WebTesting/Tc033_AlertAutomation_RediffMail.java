@@ -22,6 +22,7 @@ public class Tc033_AlertAutomation_RediffMail {
 	  //alert will open
 	  //if you missed to handle it then selenium throws exception UnhandledAlertException
 	  
+	  //driver.switchTo().alert().accept();
 	  
 	  //handle alert: use alert() whose return type Alert interface Object
 	  Alert alt1=driver.switchTo().alert();
