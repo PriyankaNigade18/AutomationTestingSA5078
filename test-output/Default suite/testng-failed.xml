@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.Tc037_NestedFrameAutomation">
+      <class name="com.WebTesting.Queries.MultiWindowHandlingDemoQA">
         <methods>
-          <include name="testNestedFrame"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.WebTesting.Tc037_NestedFrameAutomation -->
+      </class> <!-- com.WebTesting.Queries.MultiWindowHandlingDemoQA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
