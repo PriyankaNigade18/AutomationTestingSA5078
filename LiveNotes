@@ -757,65 +757,38 @@ Table Scenarios
 4.specific row
 5.specific column
 6.interaction with element
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FrameAutomation
-
-WebTabel
-
-Actions Class
-
-File upload
-
+=====================================
 Capabilities
+-----------------------
+Capabilities are options that you can use to customize and configure a Browser session
+In Selenium to customize any browser properties we have browser specific classes
+Chrome====>ChromeOptions class
+Edge======>EdgeOptions class
+Firefox====>FirefoxOptions class
 
+To get any browser capabilities
+-------------------------------------
+1.create object of browser and getCapabilities() and use asMap()
+
+2. Headless browser test
+	--headless
+
+3.To maximize browser
+	start-maximized
+	
+4.To open Incognito browser
+	--incognito
+
+5.To disable notifications
+	--disable-notifications
+	
+=========================================================	
+File upload
+======================
+For element there should be type=file
+1.Using sendkeys()
+2.Using Robot class
+Waits In Selenium
 Framework
 ----------------------
 TestNG

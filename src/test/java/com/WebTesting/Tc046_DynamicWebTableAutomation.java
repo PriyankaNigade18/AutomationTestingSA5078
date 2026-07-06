@@ -59,6 +59,54 @@ public class Tc046_DynamicWebTableAutomation {
 	  
 	  System.out.println("-------Specific Row------------------");
 
+	  List<WebElement> allRows=driver.findElements(By.xpath("//table[@id='taskTable']//tr//td[1]"));	  
+	  
+	  String expRow="Firefox";
+	  int rowCount=0;
+	  for(WebElement i:allRows)
+	  {
+		  rowCount++;
+		  if(i.getText().contains(expRow))
+		  {
+			  System.out.println("Expected row "+expRow+" found at position: "+rowCount);
+		  }
+	  }
+	  
+	  System.out.println("-------Specific Row------------------");
+
+	  List<WebElement> allRow=driver.findElements(By.xpath("//table[@id='taskTable']//tr//td[1]"));	  
+	  
+	  String expRowName="Chrome";
+	  int rCount=0;
+	  for(WebElement i:allRow)
+	  {
+		  rCount++;
+		  if(i.getText().contains(expRowName))
+		  {
+			  System.out.println("Expected row "+expRowName+" found at position: "+rCount);
+			  
+			  //CPU load validation
+			  
+			  String expCPULoad=driver.findElement(By.xpath("//strong[@class='chrome-cpu']")).getText();
+			  String actCPULoad=driver.findElement(By.xpath("//table[@id='taskTable']//tbody//tr["+rCount+"]//following-sibling::td[contains(text(),'%')]")).getText();
+			  
+			  if(actCPULoad.equals(expCPULoad))
+			  {
+				  System.out.println("CPU load match: "+actCPULoad);
+			  }else
+			  {
+				  System.out.println("CPU load not matched!");
+			  }
+			  
+			  
+			  
+			  
+		  }
+	  }
+	  
+	  
+	  
+	  
 	  
 	  
 	  
