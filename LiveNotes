@@ -856,7 +856,7 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 2.Explicit Wait
 --------------------------
--Explicit wiat is applicable for single webelement
+-Explicit wait is applicable for single webelement
 - we can apply wait on element based on conditions
 -Explicit wait implemented in Selenium using two classes
 1.WebDriverWait class
@@ -870,8 +870,101 @@ https://www.selenium.dev/documentation/webdriver/waits/
 Framework
 ----------------------
 TestNG
+====================
+TestNG attributes
+===================
+1.priority
+---------------
+every test case executes in alphabetical order
+-set priority to every test case
 
+2.description 
+-----------
+this is to maintain description for a test case
 
+3.invocationCount
+------------------------
+this will help to run test case multiple number times
+
+4.timeOut
+-------------
+to set execution timeout for test case use TimeOut
+
+5.How to set dependency between test cases
+---------------------------------------------
+dependsOnMethod attribute
+
+6.How to disable/skip test from current execution?
+========================================
+1.Using enabled=false attribute
+2.Using testNG.xml File (by excluding that method is possible)
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.WebTesting.TestNG.Tc063_TestNGDisableTestFromExecutionusingEnabledAttribute">
+      <methods>
+     <exclude name="search"></exclude> this test will disable from current execution
+     <include name="register"></include> this will include in current execution
+     <include name="login"></include> this will include in current execution
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+Note:
+------------
+Whenever you create testng.xml file for any class then 
+run test case only from xml file.
+
+========================================================
+
+How to create test suite?
+===============================
+Test suite is collection of test cases
+In Testng framework using xml file suite is possible to create
+===========================================================
+Assertions
+---------------
+-To validate current status of application we perform assertion
+-Assertions are used to verify whether the actual result matches the expected result. 
+-If the assertion fails, the test may stop or continue depending on the assertion type.
+
+Selenium support two types of assertion
+
+1.Hard Assertion
+---------------------
+-A Hard Assertion immediately stops the execution of the test when an assertion fails.
+-Any statements after the failed assertion are not executed.
+-Hard Assertion we can implement using Assert class
+
+2.Soft Assertion
+-------------------------
+-A Soft Assertion allows the test execution to continue even if an assertion fails.
+-All assertion failures are collected and reported at the end using assertAll().
+-Soft Assertion we can implement using SoftAssert class
+===============================================================================
+TestNG XML File (testng.xml)
+==============================================
+-The testng.xml file is a configuration file in TestNG used to control how your test cases
+are executed. 
+-Instead of running individual test classes manually, you can use testng.xml 
+to execute multiple test classes, create test suites, run tests in parallel,
+pass parameters, and much more.
+ 
+With testng.xml:
+==========================
+Execute multiple test classes at once.
+Group test cases.
+Control execution order.
+Run tests in parallel.
+Pass parameters.
+Include or exclude specific tests.
+Configure listeners.
+
+==========================================================
+Annotations
 
 Cucumber: 2 sessions
 

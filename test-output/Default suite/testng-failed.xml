@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.Tc058_ExplicitWaitUsingFluentWait">
+      <class name="com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute">
         <methods>
-          <include name="f"/>
+          <include name="registerTest"/>
+          <include name="loginTest"/>
+          <include name="logoutTest"/>
         </methods>
-      </class> <!-- com.WebTesting.Tc058_ExplicitWaitUsingFluentWait -->
+      </class> <!-- com.WebTesting.TestNG.Tc062_TestNGDependsOnMethodAttribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
