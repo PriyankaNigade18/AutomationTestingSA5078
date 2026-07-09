@@ -945,6 +945,7 @@ Selenium support two types of assertion
 -All assertion failures are collected and reported at the end using assertAll().
 -Soft Assertion we can implement using SoftAssert class
 ===============================================================================
+
 TestNG XML File (testng.xml)
 ==============================================
 -The testng.xml file is a configuration file in TestNG used to control how your test cases
@@ -964,7 +965,21 @@ Include or exclude specific tests.
 Configure listeners.
 
 ==========================================================
-Annotations
+Annotations(Rules)
+===================
+Precoditions
+@BeforeMethod, @BeforeClass ,@BeforeTest , @BeforeSuite
+
+Postcoditions
+@AfterMethod, @AfterClass ,@AfterTest , @AfterSuite
+
+
+
+
+
+
+
+
 
 Cucumber: 2 sessions
 
