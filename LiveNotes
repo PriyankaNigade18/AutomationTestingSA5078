@@ -972,6 +972,51 @@ Precoditions
 
 Postcoditions
 @AfterMethod, @AfterClass ,@AfterTest , @AfterSuite
+============================================================
+Test Data
+=====================
+How to read test data
+===========================
+1.Using xml file
+----------------------
+We can maintain data in xml file and we can read it in test case
+for this we use @Parameters annotation
+
+Cross browser testing: execute test on multiple browser
+
+Parallel testing
+===================
+execute test on multiple browser at a time/parllelly
+
+Parallel testing possible at
+1.method level
+2.class level
+3.test level
+
+<suite name="Suite" parallel="tests">
+
+
+
+2.Using properties file
+
+Data driven Testing approach
+===================================
+Array
+Excel file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestNG.Tc065_AssertionDemo">
+      <class name="com.WebTesting.TestNG.DataReading.Tc070_DataReadingFromXMLFile">
         <methods>
-          <include name="testSoftAssertion"/>
+          <include name="testLogin"/>
         </methods>
-      </class> <!-- com.WebTesting.TestNG.Tc065_AssertionDemo -->
+      </class> <!-- com.WebTesting.TestNG.DataReading.Tc070_DataReadingFromXMLFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
