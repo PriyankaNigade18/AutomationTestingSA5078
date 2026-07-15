@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestNG.DataReading.Tc070_DataReadingFromXMLFile">
+      <class name="com.WebTesting.TestNG.DataDrivenTesting.Tc080_DataDrivenTestForOrangehrm">
         <methods>
-          <include name="testLogin"/>
+          <include name="testLogin" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- com.WebTesting.TestNG.DataReading.Tc070_DataReadingFromXMLFile -->
+      </class> <!-- com.WebTesting.TestNG.DataDrivenTesting.Tc080_DataDrivenTestForOrangehrm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
