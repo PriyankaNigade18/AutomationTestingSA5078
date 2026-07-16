@@ -1041,6 +1041,13 @@ Hybrid Framework Design
 Design
 ---------
 1.PageObjectModel(design pattern)
+--------------------------
+	1.Using By locator
+	2.Using PageFactory class
+	----------------------------------
+		In selenium we have pageFactory class 
+		To identify any webElement we use @FindBy annotation which identify element and return WebElement/List<WebElement>
+		To initialize webelement we use initElements(driver,this)
 2.Test Data
 3.Reports() listerner+ExtentReport
 
