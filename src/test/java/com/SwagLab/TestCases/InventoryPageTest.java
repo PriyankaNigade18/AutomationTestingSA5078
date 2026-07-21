@@ -13,7 +13,7 @@ public class InventoryPageTest extends BaseTest
 	@BeforeClass
 	public void pageSetup()
 	{
-		inventoryPage=loginPage.doLogin("standard_user","secret_sauce");
+		 loginPage.doLogin(prop.getValue("swagUserName"),prop.getValue("swagPassword"));
 	}
 	
 	
@@ -35,7 +35,7 @@ public class InventoryPageTest extends BaseTest
   @Test(priority=3)
   public void validateAddProductToCart() 
   {
-	  String pname=inventoryPage.addProductToCart("Sauce Labs Fleece Jacket");
+	  String pname=inventoryPage.addProductToCart(prop.getValue("product1"));
 	  AssertJUnit.assertEquals(pname,"Sauce Labs Fleece Jacket");
 	 
 	  

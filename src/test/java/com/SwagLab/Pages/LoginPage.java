@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SwagLab.Utilities.ElementUtil;
+
 //Encapsulation=private data +public method
 public class LoginPage
 {
@@ -43,11 +45,13 @@ public class LoginPage
 	
 	public InventoryPage doLogin(String un,String psw)
 	{
+		ElementUtil.getScreenshot(driver,"loginPage");
 		userNameEle.sendKeys(un);
 		passwordEle.sendKeys(psw);
 		loginBtn.click();
-		//navigating to inventoryPage so return inventory page object
 		
+		ElementUtil.getScreenshot(driver,"inventoryPage");
+		//navigating to inventoryPage so return inventory page object
 		return new InventoryPage(driver);
 	}
 	

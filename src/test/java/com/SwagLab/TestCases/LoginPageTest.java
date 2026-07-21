@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.SwagLab.Pages.BaseTest;
+import com.SwagLab.Utilities.ElementUtil;
 
 public class LoginPageTest extends BaseTest
 {
@@ -32,7 +33,8 @@ public class LoginPageTest extends BaseTest
   @Test(priority=3)
   public void validateLogin() 
   {
-	  loginPage.doLogin("standard_user","secret_sauce");
+	  
+	  loginPage.doLogin(prop.getValue("swagUserName"),prop.getValue("swagPassword"));
 	  //assert next page url
 	  AssertJUnit.assertTrue(loginPage.getPageUrl().contains("inventory"));
 	  System.out.println("Login completed...User Navigated to InventoryPage");

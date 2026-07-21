@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SwagLab.Utilities.ElementUtil;
+
 public class InventoryPage 
 {
 	
@@ -26,7 +28,16 @@ public class InventoryPage
 	@FindBy(id="add-to-cart")
 	private WebElement addToCartBtn;
 	
+	@FindBy(css="a.shopping_cart_link")
+	private WebElement cartOption;
+	
 	//public methods
+	
+	public CartPage launchCartPage()
+	{
+		 cartOption.click();
+	return new CartPage(driver);	 
+	}
 	
 	public int getProductsCount()
 	{
@@ -36,6 +47,7 @@ public class InventoryPage
 	
 	public InventoryPage getProductDetails()
 	{
+		ElementUtil.getScreenshot(driver,"inventoryPageProducts");
 		System.out.println("----Products details-----");
 		for(WebElement i:allProducts)
 		{
@@ -53,9 +65,11 @@ public class InventoryPage
 		{
 			if(i.getText().contains(productName))
 			{
+				ElementUtil.getScreenshot(driver,"inventorySearchProduct");
 				//click on product
 				i.click();
 				System.out.println("Product Found: "+productName);
+				
 				break;
 			}
 		}
