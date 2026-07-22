@@ -36,8 +36,8 @@ public class BaseTest
 //		default:driver=new EdgeDriver();break;
 //		}
 		
-		driver=BrowserProvider.setDriver(bname);
 		prop=new PropertiesUtil("Project");
+		driver=BrowserProvider.setDriver(bname);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(prop.getValue("swagUrl"));
 		loginPage=new LoginPage(driver);
