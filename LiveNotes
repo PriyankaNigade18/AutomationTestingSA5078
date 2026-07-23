@@ -1036,6 +1036,7 @@ In Selenium using TestNG framework we use @DataProvider annotation to achieve da
 -------------------
 2.Excel file
 
+==========================================
 Hybrid Framework Design
 =========================
 Design
@@ -1051,8 +1052,65 @@ Design
 2.Test Data
 3.Reports() listerner+ExtentReport
 
-Execution
----------
+TestNG Listeners
+=================
+TestNG provides the Listeners which listens to every event that occurs in a selenium/Appium/APIcode.
+Listeners are activated either before the test or after the test case. 
+It is an interface that modifies the TestNG behavior.
+
+Listeners are implemented by the ITestListener interface.
+ An ITestListener interface has the following methods:
+
+onTestStart(ITestResult result): An onTestStart() is invoked only when any test method gets started.
+
+onTestSuccess(ITestResult result): An onTestSuccess() method is executed on the success of a test method.
+
+onTestFailure(ITestResult result): An onTestFailure() method is invoked when test method fails.
+
+onTestSkipped(ITestResult result): An onTestSkipped() run only when any test method has been skipped.
+
+onStart(ITestResult result): An onStart() method is executed on the start of any test method.
+
+onFinish(ITestResult result): An onFinish() is invoked when any test case finishes its execution.
+
+In suite call listners
+===========================
+<suite>  
+
+<listeners>
+<listener class-name="listners.ExtentTestNGITestListener"></listener>
+</listeners>
+
+<test>
+
+
+
+Framework Execution
+-------------------------
+1.Using testng.xml
+2.Using Maven pom.xml with maven goal
+	-------------------------------------
+	1.Add plugins 1.comipler  2.Surefire
+	2.install maven on local machine
+	3.To run project use goal
+	mvn clean: this will help to remove all reports from maven project target folder
+	mvn test: this will run complete project
+	
+	
+3.Using Maven In CLI
+4.Using Jenkins(Automation server)
+
+Eclipse+github+jenkins integration
+
+
+
+
+
+
+
+
+
+==============================
 
 Cucumber: 2 sessions
 

@@ -16,7 +16,7 @@ public class Tc076_DataReadingFromPropertiesFileDemo1 {
 	  
 	  
 	  //file path: File class
-	  File f1=new File(System.getProperty("user.dir")+"//TestData//config.properties");
+	  File f1=new File("./"+"//TestData//config.properties");
 	  
 	  //to read the file data in stream: FileInputStream class
 	  FileInputStream fs=new FileInputStream(f1);

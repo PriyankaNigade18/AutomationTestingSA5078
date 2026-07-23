@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestNG.PageObjectModelUsingByClass.LoginPageTestCase">
+      <class name="com.WebTesting.TestNG.ListenersReports.AppTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyUrl"/>
+          <include name="appLogin"/>
         </methods>
-      </class> <!-- com.WebTesting.TestNG.PageObjectModelUsingByClass.LoginPageTestCase -->
+      </class> <!-- com.WebTesting.TestNG.ListenersReports.AppTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
