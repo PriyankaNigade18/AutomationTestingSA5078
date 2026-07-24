@@ -7,8 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/FeatureFiles/CRM.feature",
-					glue= {"stepdef"},
-					publish=true)
+					glue= {"stepdef","hooks"},
+					//publish=true,
+					plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+						)
 public class CRMRunner {
 
 }
