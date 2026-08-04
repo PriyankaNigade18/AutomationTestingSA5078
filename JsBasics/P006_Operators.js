@@ -102,6 +102,127 @@ console.log(w);//180
 console.log(w--);//180
 console.log(w);//179
 
+let c=90;
+let d=c++;
+console.log(c);//91
+console.log(d);//90
+
+
+let i=189;
+let j=++i;
+console.log(i);//190
+console.log(j);//190
+
+let r=49;
+let s=r--;
+console.log(r);//48
+console.log(s);//49
+
+let k=67;
+let l=--k;
+console.log(k);//66
+console.log(l);//66
+
+console.log("====Relational operators======");
+/*
+Test Data:
+c=91,d=90,i=j=190,r=48,k=l=66
+*/
+
+console.log("less than <: "+(r<c));//true
+console.log("less than equal to: <=: "+(k<=l));//true
+console.log(c<=l);//false
+console.log("greater than >: "+(i>d));//true
+console.log("greater than equal to >=: "+(i>=j));//true
+console.log(c>=j);//false
+console.log(k!=l);//false
+/*
+To test equality
+========================
+1.loose equality
+=========================
+In loose equality value will automatically cocerced and then compared 
+==
+
+2.strict equality
+=========================
+In strict equality values as it compared no coercion.
+===
+
+*/
+
+
+console.log("100" == 100);//true
+
+console.log("100" === 100);//false
+
+console.log("chrome" === "chrome");//true
+
+console.log("=====Logical Operators======");
+
+/*
+c1      c2        &&(AND)       ||(OR)      !(NOT)
+true    true        true        true        false
+false   true        false       true        true
+true    false       false       true        false
+false   false       false       false        true
+
+Test Data:
+c=91,d=90,i=j=190,r=48,k=l=66
+
+*/
+
+console.log("=====&&=====");
+console.log(i===j  && k===l);//true
+console.log(d<r && c>d);//false
+console.log(r<d && k>c);//false
+console.log(j<=l && d>=i);//false
+
+console.log("=====||=====");
+console.log(i===j  || k===l);//true
+console.log(d<r || c>d);//true
+console.log(r<d || k>c);//true
+console.log(j<=l || d>=i);//false
+
+console.log("=========!NOT=======");
+
+console.log(c>d);//true
+console.log(!(c>d));//false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
