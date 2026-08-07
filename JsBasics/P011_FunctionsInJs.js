@@ -1,3 +1,5 @@
+
+
 /*
 1. Function declaration
 2. Function Expression
@@ -54,3 +56,95 @@ console.log(res);
 //OR
 
 console.log(test2('Playwright is webUi & API automation framework!'));
+
+console.log("-----Anonymous function without parameter--------");
+
+let test3=function()
+{
+    console.log("This is Anonymous function is calling....");
+    
+}
+
+//call
+
+test3();
+console.log("-----Anonymous function with parameter--------");
+
+/**
+ * 
+ * @param {number} a 
+ * @param {number} b 
+ */
+let test4=function(a,b)//2 parameters
+{
+console.log("Multiplication is: "+(a*b));
+
+}
+
+//call
+test4(10,20);
+test4("hi",10);
+
+console.log("-----Anonymous function with parameter & return keyword--------");
+
+
+let test5=function(a,b)
+{
+return a+b;
+}
+
+
+//call
+console.log("Addition is:"+test5(100,200));
+
+console.log("----Arrow function without parameter--------");
+
+let test6=()=>{
+    console.log("This is arrow function is calling.....");
+    
+}
+
+//call
+test6();
+
+console.log("----Arrow function with parameter--------");
+
+//single parameter: without () bracket we can add parameter
+let test7= msg=>{console.log("Message is: "+msg);}
+
+//multiple parameters () required
+let test8=(a,b)=>{
+console.log("Addition is: "+(a+b));
+
+}
+
+//call
+test7("Cypress is webui automation tool....");
+test8(100,400);
+
+console.log("----Arrow function with parameter & return statement-------");
+
+
+let test9=(a,b)=>{
+    return a*b;
+}
+
+
+console.log("Multiplication is: "+test9(10,30));
+
+console.log(test9("100",5));
+
+let result=test9(100,30);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
