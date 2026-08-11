@@ -118,6 +118,7 @@ return num%2===0;
 console.log(res);
 
 
+console.log(ids.reverse());
 
 
 
