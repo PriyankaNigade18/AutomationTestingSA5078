@@ -33,6 +33,8 @@ it("Test for Navigation, refresh webpage",()=>{
     //got forward
     cy.go('forward');
 
+
+
     })
 
 
