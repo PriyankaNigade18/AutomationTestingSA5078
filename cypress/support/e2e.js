@@ -25,3 +25,4 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 
 require('cypress-xpath');
 
+import 'cypress-mochawesome-reporter/register';
