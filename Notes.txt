@@ -1,0 +1,15 @@
+
+
+Playwright Tets execution Ways
+-----------------------------------
+1.To run all testcases from tests folder
+npx playwright test
+
+2.To run single test case
+npx playwright test tests/filename.spec.js
+
+3.To run test isn headed view
+npx playwright test tests/filename.spec.js --headed
+
+4.To run test case as per browser choice
+npx playwright test tests/filename.spec.js --headed --project=chromium
