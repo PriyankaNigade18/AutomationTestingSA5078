@@ -69,4 +69,29 @@ checkbox/radiobutton---->check()/uncheck():Promise<void>
 
  })
 
+test.only("Test for Crm application with css selector",async({page})=>{
 
+//open application
+await page.goto("https://automationplayground.com/crm/");
+
+//tagname with id
+await page.locator("#SignIn").click();
+
+//email: tagname with attribute
+await page.locator("input[name='email-name']").fill("test@gmail.com");
+
+//password: tagname with attribute
+await page.locator("input[placeholder='Password']").fill("test123");
+
+//checkbox: check() uncheck()
+await page.locator("#remember").check();
+
+//submit: tagname with class
+await page.locator("button.btn-primary").click();
+
+//assertion
+await expect(page).toHaveTitle("Customers");
+console.log("User navigated to customers page!");
+
+await page.waitForTimeout(2000);
+})
