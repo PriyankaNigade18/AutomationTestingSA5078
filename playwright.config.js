@@ -33,14 +33,19 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot:'on',
     video:'on',
-    headless:false
+    headless:false,
+    //viewport:null,
+    // launchOptions:{
+    //   args:["--start-maximized"]
+    // }
+  
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { browserName:'chromium' },
     },
 
     // {
