@@ -34,7 +34,7 @@ export default defineConfig({
     screenshot:'on',
     video:'on',
     headless:false,
-    //viewport:null,
+    // viewport:null,
     // launchOptions:{
     //   args:["--start-maximized"]
     // }
